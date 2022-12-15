@@ -1,15 +1,15 @@
-# EndRoundFriendlyFire
+# EndRoundFriendlyFireNW
 Plugin offers FriendlyFire with Hint/Broadcast to players. 
 
 
-![EndRoundFriendlyFire ISSUES](https://img.shields.io/github/issues/Undid-Iridium/EndRoundFriendlyFire)
-![EndRoundFriendlyFire FORKS](https://img.shields.io/github/forks/Undid-Iridium/EndRoundFriendlyFire)
-![EndRoundFriendlyFire LICENSE](https://img.shields.io/github/license/Undid-Iridium/EndRoundFriendlyFire)
+![EndRoundFriendlyFireNW ISSUES](https://img.shields.io/github/issues/Undid-Iridium/EndRoundFriendlyFireNW)
+![EndRoundFriendlyFireNW FORKS](https://img.shields.io/github/forks/Undid-Iridium/EndRoundFriendlyFireNW)
+![EndRoundFriendlyFireNW LICENSE](https://img.shields.io/github/license/Undid-Iridium/EndRoundFriendlyFireNW)
 
 
-![EndRoundFriendlyFire LATEST](https://img.shields.io/github/v/release/Undid-Iridium/EndRoundFriendlyFire?include_prereleases&style=flat-square)
-![EndRoundFriendlyFire LINES](https://img.shields.io/tokei/lines/github/Undid-Iridium/EndRoundFriendlyFire)
-![EndRoundFriendlyFire DOWNLOADS](https://img.shields.io/github/downloads/Undid-Iridium/EndRoundFriendlyFire/total?style=flat-square)
+![EndRoundFriendlyFireNW LATEST](https://img.shields.io/github/v/release/Undid-Iridium/EndRoundFriendlyFireNW?include_prereleases&style=flat-square)
+![EndRoundFriendlyFireNW LINES](https://img.shields.io/tokei/lines/github/Undid-Iridium/EndRoundFriendlyFireNW)
+![EndRoundFriendlyFireNW DOWNLOADS](https://img.shields.io/github/downloads/Undid-Iridium/EndRoundFriendlyFireNW/total?style=flat-square)
 
 TODO:
 * Add more configuration for locked values
