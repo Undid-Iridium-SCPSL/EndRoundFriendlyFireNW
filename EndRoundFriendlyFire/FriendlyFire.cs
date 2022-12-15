@@ -49,8 +49,6 @@ namespace EndRoundFriendlyFire
                 {
                     player.SendBroadcast(Instance.Config.Message, (ushort)Instance.Config.MessageDuration);
                 }
-                
-                //Server.SendBroadcast(Instance.Config.Message, (ushort)Instance.Config.MessageDuration);
             }
             //Reflection because.. NW
             Traverse.Create<AttackerDamageHandler>().Method("RefreshConfigs").GetValue();
