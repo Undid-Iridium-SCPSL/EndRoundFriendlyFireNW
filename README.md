@@ -1,21 +1,15 @@
-# EndRoundFriendlyFire
+# EndRoundFriendlyFireNW
 Plugin offers FriendlyFire with Hint/Broadcast to players. 
 
 
-![EndRoundFriendlyFire ISSUES](https://img.shields.io/github/issues/Undid-Iridium/EndRoundFriendlyFire)
-![EndRoundFriendlyFire FORKS](https://img.shields.io/github/forks/Undid-Iridium/EndRoundFriendlyFire)
-![EndRoundFriendlyFire LICENSE](https://img.shields.io/github/license/Undid-Iridium/EndRoundFriendlyFire)
+![EndRoundFriendlyFireNW ISSUES](https://img.shields.io/github/issues/Undid-Iridium/EndRoundFriendlyFireNW)
+![EndRoundFriendlyFireNW FORKS](https://img.shields.io/github/forks/Undid-Iridium/EndRoundFriendlyFireNW)
+![EndRoundFriendlyFireNW LICENSE](https://img.shields.io/github/license/Undid-Iridium/EndRoundFriendlyFireNW)
 
 
-![EndRoundFriendlyFire LATEST](https://img.shields.io/github/v/release/Undid-Iridium/EndRoundFriendlyFire?include_prereleases&style=flat-square)
-![EndRoundFriendlyFire LINES](https://img.shields.io/tokei/lines/github/Undid-Iridium/EndRoundFriendlyFire)
-![EndRoundFriendlyFire DOWNLOADS](https://img.shields.io/github/downloads/Undid-Iridium/EndRoundFriendlyFire/total?style=flat-square)
-
-TODO:
-* Add more configuration for locked values
-* Allow ignoring of fields for format string
-* Add the ability for fully customizable strings where I list variables that can be called, and then you can build your own combination of stats. 
-* (The previous one would be strings that users can reference and I would parse them to generate unique strings)
+![EndRoundFriendlyFireNW LATEST](https://img.shields.io/github/v/release/Undid-Iridium/EndRoundFriendlyFireNW?include_prereleases&style=flat-square)
+![EndRoundFriendlyFireNW LINES](https://img.shields.io/tokei/lines/github/Undid-Iridium/EndRoundFriendlyFireNW)
+![EndRoundFriendlyFireNW DOWNLOADS](https://img.shields.io/github/downloads/Undid-Iridium/EndRoundFriendlyFireNW/total?style=flat-square)
 
 # Installation
 
