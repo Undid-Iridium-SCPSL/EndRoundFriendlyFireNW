@@ -11,12 +11,6 @@ Plugin offers FriendlyFire with Hint/Broadcast to players.
 ![EndRoundFriendlyFireNW LINES](https://img.shields.io/tokei/lines/github/Undid-Iridium/EndRoundFriendlyFireNW)
 ![EndRoundFriendlyFireNW DOWNLOADS](https://img.shields.io/github/downloads/Undid-Iridium/EndRoundFriendlyFireNW/total?style=flat-square)
 
-TODO:
-* Add more configuration for locked values
-* Allow ignoring of fields for format string
-* Add the ability for fully customizable strings where I list variables that can be called, and then you can build your own combination of stats. 
-* (The previous one would be strings that users can reference and I would parse them to generate unique strings)
-
 # Installation
 
 **[NWAPI](https://github.com/northwood-studios/NwPluginAPI) must be installed for this to work.**
