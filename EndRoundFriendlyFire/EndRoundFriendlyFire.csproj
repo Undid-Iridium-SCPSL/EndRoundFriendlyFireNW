@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net4.8</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <AssemblyName>EndRoundFriendlyFire</AssemblyName>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Authors>Undid-Iridium</Authors>
+        <Version>1.0.0</Version>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+      <PackageReference Include="Northwood.PluginAPI" Version="12.0.0-rc.4" />
+      <PackageReference Include="Northwood.PluginAPI.Analyzers" Version="12.0.0-rc.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp-firstpass">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Mirror.dll</HintPath>
+      </Reference>
+      <Reference Include="NorthwoodLib">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\NorthwoodLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command="if EXIST &quot;C:\Users\tuxwo\AppData\Roaming\SCP Secret Laboratory\PluginAPI\plugins\7777&quot; copy /Y  &quot;$(TargetPath)&quot; &quot;C:\Users\tuxwo\AppData\Roaming\SCP Secret Laboratory\PluginAPI\plugins\7777\$(TargetFileName)&quot;&#xD;&#xA;  )" />
+    </Target>
+
+
+</Project>
