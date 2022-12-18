@@ -16,7 +16,7 @@ namespace EndRoundFriendlyFire
         [PluginConfig]
         public Config Config;
 
-        [PluginEntryPoint("EndRoundFriendlyFire", "1.0.1", "Friendly fire auto enabled/disable on round ends", "Undid Iridium")]
+        [PluginEntryPoint("EndRoundFriendlyFire", "1.0.2", "Friendly fire auto enabled/disable on round ends", "Undid Iridium")]
         void LoadPlugin()
         {
             Instance = this;
@@ -27,7 +27,7 @@ namespace EndRoundFriendlyFire
         public FriendlyFire Instance { get; set; }
 
         [PluginEvent(ServerEventType.RoundEnd)]
-        void onRoundEnd()
+        void onRoundEnd(RoundSummary.LeadingTeam curLeadingTeam)
         {
             Server.FriendlyFire = true;
             ConfigFile.ServerConfig.SetString("friendly_fire_multiplier", Instance.Config.OverriddenFriendlyFireMultiplier.ToString());
