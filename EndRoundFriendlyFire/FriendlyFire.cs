@@ -27,7 +27,7 @@ namespace EndRoundFriendlyFire
         public FriendlyFire Instance { get; set; }
 
         [PluginEvent(ServerEventType.RoundEnd)]
-        void onRoundEnd()
+        void onRoundEnd(RoundSummary.LeadingTeam curLeadingTeam)
         {
             Server.FriendlyFire = true;
             ConfigFile.ServerConfig.SetString("friendly_fire_multiplier", Instance.Config.OverriddenFriendlyFireMultiplier.ToString());
