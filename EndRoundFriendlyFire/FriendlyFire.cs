@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using GameCore;
 using HarmonyLib;
 using Hints;
@@ -51,7 +52,8 @@ namespace EndRoundFriendlyFire
                 }
             }
             //Reflection because.. NW
-            Traverse.Create<AttackerDamageHandler>().Method("RefreshConfigs").GetValue();
+            //Traverse.Create<AttackerDamageHandler>().Method("RefreshConfigs").GetValue();
+            typeof(AttackerDamageHandler).GetMethod("RefreshConfigs", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, null);
             Log.Debug($"End FF server with FriendlyFire On", Instance.Config.Debug);
         }
         
@@ -59,7 +61,7 @@ namespace EndRoundFriendlyFire
         void onRoundStart()
         {
             Server.FriendlyFire = false;
-            Traverse.Create<AttackerDamageHandler>().Method("RefreshConfigs").GetValue();
+            typeof(AttackerDamageHandler).GetMethod("RefreshConfigs", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, null);
             Log.Debug($"Recycled server with FriendlyFire off", Instance.Config.Debug);
         }
         
