@@ -21,6 +21,7 @@ Plugin offers FriendlyFire with Hint/Broadcast to players.
 * NWAPI: V12.0.0-RC.2
 * SCP:SL Server: V12
 * Harmony 2.2.2
+
 Example configuration
 ```
 is_enabled: true
