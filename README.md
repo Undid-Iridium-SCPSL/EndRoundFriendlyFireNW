@@ -14,13 +14,12 @@ Plugin offers FriendlyFire with Hint/Broadcast to players.
 # Installation
 
 **[NWAPI](https://github.com/northwood-studios/NwPluginAPI) must be installed for this to work.**
-
-Current plugin version: V1.0.0 
+**[Harmony 2.2.2](https://github.com/pardeike/Harmony/releases/tag/v2.2.2.0)
 
 ## REQUIREMENTS
 * NWAPI: V12.0.0-RC.2
 * SCP:SL Server: V12
-
+* Harmony 2.2.2
 Example configuration
 ```
 is_enabled: true
