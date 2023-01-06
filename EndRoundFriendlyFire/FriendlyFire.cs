@@ -17,7 +17,7 @@ namespace EndRoundFriendlyFire
         [PluginConfig]
         public Config Config;
 
-        [PluginEntryPoint("EndRoundFriendlyFire", "1.0.3", "Friendly fire auto enabled/disable on round ends", "Undid Iridium")]
+        [PluginEntryPoint("EndRoundFriendlyFire", "1.0.4", "Friendly fire auto enabled/disable on round ends", "Undid Iridium")]
         void LoadPlugin()
         {
             Instance = this;
