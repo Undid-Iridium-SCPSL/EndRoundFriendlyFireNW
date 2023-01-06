@@ -17,7 +17,7 @@ namespace EndRoundFriendlyFire
         [PluginConfig]
         public Config Config;
 
-        [PluginEntryPoint("EndRoundFriendlyFire", "1.0.3", "Friendly fire auto enabled/disable on round ends", "Undid Iridium")]
+        [PluginEntryPoint("EndRoundFriendlyFire", "1.0.4", "Friendly fire auto enabled/disable on round ends", "Undid Iridium")]
         void LoadPlugin()
         {
             Instance = this;
@@ -60,10 +60,17 @@ namespace EndRoundFriendlyFire
         [PluginEvent(ServerEventType.RoundStart)]
         void onRoundStart()
         {
-            Server.FriendlyFire = false;
             typeof(AttackerDamageHandler).GetMethod("RefreshConfigs", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, null);
-            Log.Debug($"Recycled server with FriendlyFire off", Instance.Config.Debug);
+            Server.FriendlyFire = false;
+            Log.Debug($"Recycled server with FriendlyFire (RoundStart) off", Instance.Config.Debug);
         }
         
+        [PluginEvent(ServerEventType.WaitingForPlayers)]
+        void onWaitingForPlayers()
+        {
+            typeof(AttackerDamageHandler).GetMethod("RefreshConfigs", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, null);
+            Server.FriendlyFire = false;
+            Log.Debug($"Recycled server with FriendlyFire (WaitingForPlayers) off", Instance.Config.Debug);
+        }
     }
 }
